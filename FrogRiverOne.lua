@@ -17,3 +17,18 @@ function solution(X, A)
     --print(size)
     return FoundPosition
 end
+
+
+def solution(X, A):
+    # write your code in Python 3.6
+    size = len(A)
+    i = 0    
+    indexSearch = -1
+    
+    while i < size:        
+        if A[i] == X:            
+            indexSearch = i            
+            i = size+1
+        i +=1
+    
+    return indexSearch
